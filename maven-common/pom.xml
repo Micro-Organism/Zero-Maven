@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--父项目的坐标，坐标包括group ID，artifact ID和version。 -->
+    <!--如果项目中没有规定某个元素的值，那么父项目中的对应值即为项目的默认值 -->
+    <parent>
+        <!--被继承的父项目的全球唯一标识符 -->
+        <groupId>com.zero.maven</groupId>
+        <!--被继承的父项目的构件标识符 -->
+        <artifactId>zero-maven</artifactId>
+        <!--被继承的父项目的版本 -->
+        <version>1.0.0</version>
+
+        <!-- 父项目的pom.xml文件的相对路径,默认值是../pom.xml。 -->
+        <!-- 寻找父项目的pom：构建当前项目的地方 -> relativePath指定的位置 -> 本地仓库 -> 远程仓库 -->
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>maven-common</artifactId>
+    <version>1.0.0</version>
+    <name>maven-common</name>
+    <description>maven-common</description>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>
