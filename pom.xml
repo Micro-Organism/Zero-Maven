@@ -20,6 +20,8 @@
     <description>zero-maven</description>
     <modules>
         <module>maven-common</module>
+        <module>maven-boot</module>
+        <module>maven-cloud</module>
     </modules>
     <!-- 项目产生的构件类型，包括jar、war、ear、pom等 -->
     <packaging>pom</packaging>
@@ -28,7 +30,7 @@
 
     <!--  region 属性信息 properties -->
     <properties>
-        <java.version>21</java.version>
+        <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
